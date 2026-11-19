@@ -1,6 +1,6 @@
 # Calendario Gerarion y motor multi-calendario
 
-Parte de la suite de referencia **Gerarion** (verared/gerarion `v3.2.0`,
+Parte de la suite de referencia **Gerarion** (verared/gerarion `v3.2.2`,
 Gerarion Universal Standard). Este directorio es un **paquete de
 exportación** listo para publicarse (o consumirse) como repositorio
 satélite `verared/gt-calendar`; conserva las rutas relativas del repositorio
@@ -12,17 +12,20 @@ El año regular AY/DY con Gran Tempalum simétrico y el motor determinista de co
 
 ## Estado normativo
 
-- **Estable** — línea base `v3.2.0` (aritmética y vectores
+- **Estable** (`maturity: stable`) — línea base `v3.2.2` (aritmética y vectores
   congelados: GUS v3.0.0).
 - Especificación(es) incluida(s): `docs/specs/CALENDAR.es.md`, `docs/specs/CALENDAR.en.md`
+- Manifiesto de integridad verificable: [`EXPORT-MANIFEST.json`](EXPORT-MANIFEST.json)
+- Matriz oficial de compatibilidad: [`COMPATIBILITY.md`](https://github.com/verared/gerarion/blob/v3.2.2/COMPATIBILITY.md)
 
 ## Dependencias
 
 - `gt-core` (*verared/gt-core*): tipos base y servicios del núcleo.
-Base común: `verared/gerarion` `v3.2.0`.
+Base común: `verared/gerarion` `v3.2.2`.
 
 ## Contenido
 
+- `EXPORT-MANIFEST.json`
 - `LICENSE`
 - `NOTICE`
 - `docs/specs/CALENDAR.en.md`
@@ -56,10 +59,16 @@ reuse lint                                    # licencias al 100 %
 # (las pruebas viven en la suite de verared/gerarion)
 ```
 
+Desde `verared/gerarion`, la integridad completa contra `EXPORT-MANIFEST.json` se verifica con:
+
+```bash
+python3 tools/export_module.py --verify-existing /ruta/a/gt-calendar
+```
+
 ## Contrato de sincronización con `verared/gerarion`
 
 Este paquete es **generado, no editado a mano**: se regenera byte a
-byte desde `verared/gerarion v3.2.0` con
+byte desde `verared/gerarion v3.2.2` con
 `python3 tools/export_module.py --module gt-calendar --out <dir>`. La fuente
 de verdad normativa (especificaciones, vectores CC0, núcleos de
 referencia de las tres plataformas y la batería completa) permanece en

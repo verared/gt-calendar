@@ -1,6 +1,6 @@
 # Gerarion calendar and multi-calendar engine
 
-Part of the **Gerarion** reference suite (verared/gerarion `v3.2.0`,
+Part of the **Gerarion** reference suite (verared/gerarion `v3.2.2`,
 Gerarion Universal Standard). This directory is an **export package**
 ready to be published (or consumed) as the `verared/gt-calendar` satellite
 repository; it keeps the base repository's relative layout so modules
@@ -12,17 +12,20 @@ The regular AY/DY year with symmetric Great Tempalum and the deterministic conve
 
 ## Normative status
 
-- **Estable** — baseline `v3.2.0` (frozen arithmetic and vectors:
+- **Estable** (`maturity: stable`) — baseline `v3.2.2` (frozen arithmetic and vectors:
   GUS v3.0.0).
 - Included specification(s): `docs/specs/CALENDAR.es.md`, `docs/specs/CALENDAR.en.md`
+- Verifiable integrity manifest: [`EXPORT-MANIFEST.json`](EXPORT-MANIFEST.json)
+- Official compatibility matrix: [`COMPATIBILITY.md`](https://github.com/verared/gerarion/blob/v3.2.2/COMPATIBILITY.md)
 
 ## Dependencies
 
 - `gt-core` (*verared/gt-core*): tipos base y servicios del núcleo.
-Common base: `verared/gerarion` `3.2.0`.
+Common base: `verared/gerarion` `3.2.2`.
 
 ## Contents
 
+- `EXPORT-MANIFEST.json`
 - `LICENSE`
 - `NOTICE`
 - `docs/specs/CALENDAR.en.md`
@@ -56,10 +59,16 @@ reuse lint                                    # licensing 100 %
 # (las pruebas viven en la suite de verared/gerarion)
 ```
 
+From `verared/gerarion`, full integrity against `EXPORT-MANIFEST.json` is verified with:
+
+```bash
+python3 tools/export_module.py --verify-existing /path/to/gt-calendar
+```
+
 ## Synchronisation contract with `verared/gerarion`
 
 This package is **generated, never hand-edited**: it is regenerated
-byte for byte from `verared/gerarion v3.2.0` with
+byte for byte from `verared/gerarion v3.2.2` with
 `python3 tools/export_module.py --module gt-calendar --out <dir>`. The
 normative source of truth (specifications, CC0 vectors, reference
 cores for the three platforms, and the full test suite) stays in
