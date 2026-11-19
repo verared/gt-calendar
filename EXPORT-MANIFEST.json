@@ -1,11 +1,11 @@
 {
   "schema": "gerarion-export-manifest/1",
   "module": "gt-calendar",
-  "version": "3.2.2",
+  "version": "3.3.0",
   "maturity": "stable",
   "source_repo": "verared/gerarion",
-  "source_tag": "v3.2.2",
-  "source_commit": "322a650bd6bced29492fdb2e4dd1113828421ebe",
+  "source_tag": "v3.3.0",
+  "source_commit": "3902691eab4bf55815b5419064e7471dcc0da240",
   "dependencies": {
     "gt-core": ">=3.2.0,<4.0.0"
   },
@@ -16,9 +16,9 @@
     "LICENSES/CC0-1.0.txt": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
     "LICENSES/MIT.txt": "757fbdb81df81bd060d17276424bd4fc26269e780599988c3ce8fba4260b0b20",
     "NOTICE": "6af3a8bb6fe83f1b2d2f3d76528ab1f2b8e56da842c1de81673385821513e835",
-    "README.es.md": "8cb51cca2bddba69a0081da73cb4354eba6cfc04e890919fea4f56b45feac38a",
-    "README.md": "5145bb49725a62b528d43ca18b999fae1f90ab17396e95adbc7613fb1ae34459",
-    "REUSE.toml": "8edeb0059d9a9c793125114dfc67674454b26a631a57c5197fc84c4598ec9ef9",
+    "README.es.md": "b4445ebcd1a6eff415ffb94819058a91e3a520c1a8abd5ce7ddca492fd4c4075",
+    "README.md": "47f52d326ef43f779eafd1b7d4deb96b088a369fb450a4bd8172a99b950dfe9f",
+    "REUSE.toml": "899ae2d61fe7dee3d6c100b31dcf3ff2bbc381ee9b5d898706c6a955e0db066b",
     "docs/specs/CALENDAR.en.md": "8b0011f088d237524ec94b84d9c7ccb91172c5708b80fb1dd7a4ee4afcdc5235",
     "docs/specs/CALENDAR.es.md": "72f6fd21d6ee07280c82e7e71b9008f8f4773771f43bf588a86b74ac0f223828",
     "impl-c/calendars/china_table.c": "9789734211f1d18459ba535c899a24a9c2de3054dd8943a70995649aea275f54",
